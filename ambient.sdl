@@ -1,0 +1,22 @@
+eye 0.0 0.0 5.0
+size 200 200
+ortho -1 -1 1 1
+ambient 0.75
+
+#
+# light definition
+# x y z  intensity
+lightpoint 10000 0 10000 1 1 1 1.0
+#object definition
+#        a   b   c   d   e   f   g   h    j    k   R   G   B  Ka  Kd  Ks n
+#
+objectquadric 1.0 1.0 1.0 0.0 0.0 0.0 0.0 0.0 40.0 390 1.0 1.0 0.0 0.4 0.0 0.0 5 0 0 1
+
+# background color
+background 0.0 0.0 1.0
+maxdepth 0
+npaths 100
+nshadowrays 1
+tonemapping 1
+
+output ambient.png

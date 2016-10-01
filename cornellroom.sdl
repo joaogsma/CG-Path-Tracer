@@ -1,0 +1,57 @@
+output cornell.png
+
+eye 0.0 0.0 5.7
+size 200 200
+ortho -1 -1 1 1
+
+background 0 0 0
+ambient 0.5
+tonemapping 1
+
+maxdepth 4
+npaths 100
+nshadowrays 20
+lightresolution 10 10
+
+# ================================================================================
+# Point light in the center of the ceiling
+# lightpoint 0.0 3.8360 -24.906 1.0 1.0 1.0 1.0
+
+# Rectangular light in the center onf the ceiling
+lightarea luzcornell.obj 1.0 1.0 1.0 1.0
+
+# ================================================================================
+# objectquadric a b c d e f g h i j red green blue ka kd ks alfa Kr Kt ior
+# Ax^2 + By^2 + Cz^2 + Dxy + Exz + Fyz + Gx + Hy + Iz + J = 0
+
+# sphere of radius 1
+objectquadric 1 1 1 0 0 0 5 5 40 411.5 1 1 1 0.2 0.2 0.3 1 0.5 1 1.5
+
+# sphere of radius 2
+# objectquadric 1 1 1 0 0 0 0 0 52 667 1.0 1.0 1.0 0.0 0.0 1 50 1 1 1
+
+# ================================================================================
+# object <name.obj> offsetX offsetY offsetZ red green blue ka kd ks alfa KS KT ior
+# left wall RED
+object leftwall.obj 0 0 0 1.0 0.0 0.0 0.3 0.7 0.0 5 0 0 1
+
+# right wall GREEN
+object rightwall.obj 0 0 0 0.0 1.0 0.0 0.3 0.7 0.0 5 0 0 1
+
+# floor WHITE
+object floor.obj 0 0 0 1.0 1.0 1.0 0.3 0.7 0.0 5 0 0 1
+
+# back wall WHITE
+object back.obj 0 0 0 1.0 1.0 1.0 0.3 0.7 0.0 5 0 0 1
+
+# ceiling WHITE
+object ceiling.obj 0 0 0 1.0 1.0 1.0 0.3 0.7 0.0 5 0 0 1
+
+# cube 1 WHITE
+object cube1.obj 0 0 0 1.0 1.0 1.0 0.3 0.7 0.0 5 0 0 1
+
+# cube 2 WHITE
+object cube2.obj 0 0 0 1.0 1.0 1.0 0.3 0.7 0.0 5 0 0 1
+
+# white cat
+# object cat.obj 0 0 0 1 1 1 0.3 0.7 0 1 0.5 0.5 1

@@ -1,0 +1,9 @@
+# Output images
+*.png
+
+# Eclipse settings
+.settings/
+
+# Compiled files
+bin/
+*.class

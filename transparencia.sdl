@@ -1,0 +1,25 @@
+eye 0.0 0.0 5.0
+size 400 400
+ortho -1 -1 1 1
+ambient 0.4
+
+# light definition
+# x y z  intensity
+lightpoint 10000 0.0 10000 1 1 1 1.0
+#object definition
+#        a   b   c   d   e   f   g   h    j    k   R   G   B  Ka  Kd  Ks n KS KT ir
+
+# cilindro
+objectquadric 1.0 0.0 1.0 0.0 0.0 0.0 0.0 0.0 10.0 24.75 1.0 0.0 0.0 0.2 0.2 0.3 1 0 1 1
+
+# esfera
+objectquadric 1.0 1.0 1.0 0.0 0.0 0.0 -1.0 0.0 18.0 80.25 0.0 1.0 1.0 0.2 1 0.0 1 0 0 1
+
+# background color
+background 0 0 0
+maxdepth 6
+npaths 500
+nshadowrays 1
+tonemapping 1
+
+output transparencia.png
